@@ -70,6 +70,9 @@ body {
 	font-size: 20px;
 }
 
+.circle {
+  border-radius: 50%;
+}
 .nombre {
 	display: inline;
 	font-size: 12px;
@@ -120,4 +123,42 @@ h6 {
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left:45%;
+}
+
+.comment {
+  background-color: white;
+  margin-top: 20px;
+}
+.circle-min {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid green;
+  margin-top: 5px;
+}
+
+.lado-nombre {
+  float: right;
+
+  margin-top: -30px;
+  color: green;
+  font-weight: 600;
+}
+
+.gusta {
+  float: right;
+  margin-left: 25px;
+  margin-top: -30px;
+  color: green;
+  font-weight: 600;
+}
+
+.fa-heart{
+  font-size: 60px;
+}
+.comenta {
+  float: right;
+  margin-left: 35px;
+  margin-top: -30px;
+  color: gray;
+  font-weight: 600;
 }
