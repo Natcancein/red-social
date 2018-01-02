@@ -3,10 +3,13 @@
 	margin-top: -10px;
 }
 
+
 body {
 	background-color: #BCDDC0;
+	font-family: 'Raleway', sans-serif;
 }
 
+/*NAVEGADOR*/
 .search {
 	margin-top: 10px;
 }
@@ -72,7 +75,49 @@ body {
 	font-size: 12px;
 }
 
+/*BOTON CONTACTOS*/
 .boton {
 	width: 100%;
 	background-color: green;
+}
+
+h6 {
+	text-align: center;
+}
+
+/*TITULO*/
+.title {
+  text-align: center;
+  color:green;
+  padding-bottom: 20px;
+}
+
+.title span{
+  color:black;
+}
+
+/*TABS COMENTARIOS,FOTOS, VIDEOS*/
+.green{
+  color: green;
+}
+
+.enviar {
+  margin-top: 10px;
+}
+
+#com input{
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+.espacio-fotos {
+  width: 100%;
+  background-color: white;
+}
+
+#camara, #video{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left:45%;
 }
