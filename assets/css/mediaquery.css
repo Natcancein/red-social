@@ -1,0 +1,32 @@
+
+@media only screen and (max-width : 767px){
+ 
+ .nombre-perfil {
+	font-size: 12px;
+	margin-top: 10px;
+	}
+ 
+ .datos {
+ 	margin-top: 10px;
+ }
+
+ }
+@media only screen and (max-width : 480px){
+ .container-fluid{
+		width: 100%;
+		margin: 0;
+		}
+
+	.nombre-perfil {
+	font-size: 12px;
+	margin-top: 10px;
+	}
+
+.datos {
+ 	margin-top: 10px;
+ }
+
+	
+		
+}
+ 
