@@ -7,6 +7,7 @@
 body {
 	background-color: #BCDDC0;
 	font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 /*NAVEGADOR*/
@@ -65,6 +66,41 @@ body {
   font-size: 14px;
 }
 
+/*PERFIL*/
+
+.imgperfil {
+  background-color:#e2e2e2;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: -20px;
+    overflow-x: hidden;
+}
+
+.nombre-perfil {
+  margin-top: 100px;
+  color:green;
+}
+
+.datos {
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+
+.navegador-bajo {
+  list-style: none;
+  background-color: white;
+  display: inline;
+  width: 100%;
+  height: 30px;
+}
+
+.navegador-bajo li{
+  display: inline;
+  margin-left: 140px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
 .user {
 	margin-top: 10px;
 	font-size: 20px;
@@ -78,6 +114,14 @@ body {
 	font-size: 12px;
 }
 
+.perfil {
+  font-size: 12px;
+  color:green;
+}
+
+a {
+  color: green;
+}
 /*BOTON CONTACTOS*/
 .boton {
 	width: 100%;
