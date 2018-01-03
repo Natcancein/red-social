@@ -75,6 +75,7 @@ body {
 /*PERFIL*/
 
 .imgperfil {
+  background-image: url(../img/patron-01.png);
   background-color:#e2e2e2;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -91,6 +92,7 @@ body {
 .datos {
   margin-top: 100px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .navegador-bajo {

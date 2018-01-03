@@ -100,7 +100,126 @@ Newsfeed</a></li>
     </nav>
 </div>
 
+<!-- COMENTARIOS, FOTOS, VIDEOS -->
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#com" class="green">Comentarios</a></li>
+      <li><a data-toggle="tab" href="#fotos" class="green">Fotos</a></li>
+      <li><a data-toggle="tab" href="#videos" class="green">Videos</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="com" class="tab-pane fade in active white">
+          <form action="javascript:saveCom()">
+          <div class="form-group col-xs-12 col-sm-12 col-md-12">
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+        <button type="button" class="btn btn-success enviar" id="btn">Enviar</button>
+         </form>
+        </div>
+        <div id="fotos" class="tab-pane fade white">
+          <div class="espacio-fotos"> <form class="subir" method="post" enctype="multipart/form-data">
+            <label for="file" class="subir2">Elige tu imagen para subir</label>
+         <div>
+            <label class="btn-bs-file btn btn-lg cam">
+                <i class="fa fa-camera-retro fa-3x" aria-hidden="true" id="camara"></i>
+                <input type="file" />
+            </label>
+      </div>
+        </form>
+       </div>
+        </div>
+        <div id="videos" class="tab-pane fade">
+        <div class="espacio-fotos"> <button type="" id="video" data-toggle="tooltip" title="Sube tus videos!"><i class="fa fa-video-camera fa-3x" aria-hidden="true"></i></button> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="container"> 
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="container-comments" id="post">
+          </div>
+        </div>
+         
+      </div>
+    </div>
+    
+<!-- POSTS -->
+<div class="container">
+    <div class="row comment">
+      <div class="col-xs-1 col-sm-1 col-md-1">
+      <img src="assets/img/contacts/perfil.jpg" alt="" class="circle-min">
+      </div>
+      <div class="col-xs-offset-1 col-xs-2 col-sm-3 col-md-2">
+       <h5 class="lado-nombre">Natalia Arancibia</h5>
+      </div>
 
+
+      <div class="col-xs-offset-8 col-xs-1 col-sm-offset-9 col-sm-1 col-md-offset-9 col-md-1">
+        <i class="fa fa-heart fa-2x gusta" aria-hidden="true"></i>
+
+      </div>
+      <div class="col-xs-offset-10 col-xs-1 col-sm-offset-10 col-sm-2 col-md-offset-10 col-md-2">
+        <i class="fa fa-comment fa-2x comenta" aria-hidden="true"></i>
+      </div>
+      
+      <div class="col-xs-12 col-sm-12 col-md-12 comment">
+      <img src="assets/img/posts/1.jpg" class="img-responsive post" alt="">
+      </div>
+
+    </div>
+  </div>
+
+<div class="container">
+    <div class="row comment">
+      <div class="col-xs-1 col-sm-1 col-md-1">
+      <img src="assets/img/contacts/perfil.jpg" alt="" class="circle-min">
+      </div>
+      <div class="col-xs-offset-1 col-xs-2 col-sm-3 col-md-2">
+       <h5 class="lado-nombre">Natalia Arancibia</h5>
+      </div>
+
+
+      <div class="col-xs-offset-8 col-xs-1 col-sm-offset-9 col-sm-1 col-md-offset-9 col-md-1">
+        <i class="fa fa-heart fa-2x gusta" aria-hidden="true"></i>
+
+      </div>
+      <div class="col-xs-offset-10 col-xs-1 col-sm-offset-10 col-sm-2 col-md-offset-10 col-md-2">
+        <i class="fa fa-comment fa-2x comenta" aria-hidden="true"></i>
+      </div>
+      
+      <div class="col-xs-12 col-sm-12 col-md-12 comment">
+      <img src="assets/img/posts/2.jpg" class="img-responsive post" alt="">
+      </div>
+
+    </div>
+  </div>
+
+<div class="container">
+    <div class="row comment">
+      <div class="col-xs-1 col-sm-1 col-md-1">
+      <img src="assets/img/contacts/perfil.jpg" alt="" class="circle-min">
+      </div>
+      <div class="col-xs-offset-1 col-xs-2 col-sm-3 col-md-2">
+       <h5 class="lado-nombre">Natalia Arancibia</h5>
+      </div>
+
+
+      <div class="col-xs-offset-8 col-xs-1 col-sm-offset-9 col-sm-1 col-md-offset-9 col-md-1">
+        <i class="fa fa-heart fa-2x gusta" aria-hidden="true"></i>
+
+      </div>
+      <div class="col-xs-offset-10 col-xs-1 col-sm-offset-10 col-sm-2 col-md-offset-10 col-md-2">
+        <i class="fa fa-comment fa-2x comenta" aria-hidden="true"></i>
+      </div>
+      
+      <div class="col-xs-12 col-sm-12 col-md-12 comment">
+      <img src="assets/img/posts/3.jpg" class="img-responsive post" alt="">
+      </div>
+
+    </div>
+  </div>
 
 
 
