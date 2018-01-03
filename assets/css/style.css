@@ -112,18 +112,23 @@ h6 {
   width: 100%;
   padding: 10px;
   border: none;
+  height: auto;
 }
 
 .espacio-fotos {
   width: 100%;
   background-color: white;
+  padding: 10px;
+  
 }
 
-#camara, #video{
+#video{
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left:45%;
+  margin-left:5%;
 }
+
+/*MIEMBROS*/
 
 .comment {
   background-color: white;
@@ -142,10 +147,22 @@ h6 {
   color: green;
   font-weight: 600;
 }
+.container-comments{
+  background-color: #BCDDC0;
+  margin-top: 20px;
+}
 
+/*POSTEOS*/
+.posteo {
+  padding: 10px;
+  margin-top: 20px;
+   margin-bottom: 20px;
+    background-color: white;
+}
 .post {
   padding-bottom: 10px;
   margin:0 auto;
+
 }
 .gusta {
   float: right;
@@ -164,4 +181,37 @@ h6 {
   margin-top: -40px;
   color: gray;
   font-weight: 600;
+}
+
+.subir {
+  margin:0 auto;
+  margin-left: 35%;
+}
+
+.subir2 {
+  margin:0 auto;
+  margin-left: 10%;
+}
+
+#camara {
+  margin-left: 0%;
+}
+
+/*BOTON CAMARA*/
+.btn-bs-file{
+    position:relative;
+}
+.btn-bs-file input[type="file"]{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+}
+
+.cam{
+  margin-left: 20%;
 }

@@ -120,11 +120,24 @@
       </ul>
       <div class="tab-content">
         <div id="com" class="tab-pane fade in active white">
-        <input type="text"> </input>
-        <button type="button" class="btn btn-success enviar">Enviar</button>
+          <form action="javascript:saveCom()">
+          <div class="form-group col-xs-12 col-sm-12 col-md-12">
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+        <button type="button" class="btn btn-success enviar" id="btn">Enviar</button>
+         </form>
         </div>
         <div id="fotos" class="tab-pane fade white">
-          <div class="espacio-fotos"> <button type="" id="camara" data-toggle="tooltip" title="Sube tus fotos!"><i class="fa fa-camera-retro fa-3x" aria-hidden="true"></i></button> </div>
+          <div class="espacio-fotos"> <form class="subir" method="post" enctype="multipart/form-data">
+            <label for="file" class="subir2">Elige tu imagen para subir</label>
+         <div>
+            <label class="btn-bs-file btn btn-lg cam">
+                <i class="fa fa-camera-retro fa-3x" aria-hidden="true" id="camara"></i>
+                <input type="file" />
+            </label>
+      </div>
+        </form>
+       </div>
         </div>
         <div id="videos" class="tab-pane fade">
         <div class="espacio-fotos"> <button type="" id="video" data-toggle="tooltip" title="Sube tus videos!"><i class="fa fa-video-camera fa-3x" aria-hidden="true"></i></button> </div>
@@ -132,6 +145,15 @@
       </div>
     </div>
   </div>
+   <div class="container"> 
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="container-comments" id="post">
+          </div>
+        </div>
+         
+      </div>
+    </div>
   <!-- MIEMBROS-->
   <div class="container">
     <div class="row comment">
