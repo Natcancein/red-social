@@ -162,3 +162,29 @@ h6 {
   color: gray;
   font-weight: 600;
 }
+.btnp{
+  margin-top: 50px;
+  margin-left:100px;
+  background:#3260E3;
+  }
+.imgperfil {
+  margin-top: 50px;
+  margin-left: 80px;
+
+}
+.imgperfil h3{
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.imgmuro{
+  margin-top: 100px;
+  margin-left:300px;
+}
+.na{
+  background:#FFF6F6;
+}
+
+.na li{
+
+}
