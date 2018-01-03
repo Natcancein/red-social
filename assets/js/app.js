@@ -10,6 +10,18 @@ comment + "</br>" +"</div>");
     
 });
 
+$("#seguir").mouseenter(function dejar(){
+	$("#seguir").text("dejar de seguir").css("font-size","10px");
 
+});
 
+$("#seguir").mouseleave(function volver(){
+	$("#seguir").text("Siguiendo").css("font-size","12px");
+	
+});
+
+$("#seguir").mouseup(function remover(){
+	$(this).parent().parent().parent().remove();
+	
+});
 

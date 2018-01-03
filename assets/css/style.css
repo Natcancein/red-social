@@ -133,6 +133,14 @@ body {
 a:hover {
   color: green;
 }
+
+/*AMIGOS*/
+
+.amigos {
+  text-align: center;
+  color:green;
+}
+
 /*BOTON CONTACTOS*/
 .boton {
 	width: 100%;
