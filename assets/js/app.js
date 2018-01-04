@@ -70,10 +70,11 @@ $("#seguir").mouseenter(function dejar(){
 		});
 		$(id).find("a").mouseup(function(){
 			$(this).parent().parent().parent().parent().remove();
+				if ($('.col-xs-4').length ===0){
+				$("#sinAmigos").text("Quedaste sin amigos!");
+			}
 
 		});
-		if $(id===0){
-				$("#sinAmigos").text("Quedaste sin amigos");
-			}
+	
 	}
 

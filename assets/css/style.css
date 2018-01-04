@@ -145,6 +145,7 @@ a:hover {
 .boton {
 	width: 100%;
 	background-color: green;
+  font-size: 10px
 }
 
 h6 {
