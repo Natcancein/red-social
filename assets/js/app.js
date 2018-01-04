@@ -1,6 +1,8 @@
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+   /* $('[data-toggle="tooltip"]').tooltip(); */  
 });
+
+
 
 $('#preview').hover(
     function() {
@@ -29,6 +31,7 @@ $('input[type=file]').change(function() {
          $('#preview img').attr('src', e.target.result);
 	 }
      
+
      reader.readAsDataURL(this.files[0]);
 });
 
@@ -52,13 +55,18 @@ $("#seguir").mouseenter(function dejar(){
 
 });
 
+
+
+
 $("#seguir").mouseleave(function volver(){
 	$("#seguir").text("Siguiendo").css("font-size","12px");
 	
 });
 
 $("#seguir").mouseup(function remover(){
-	$(this).parent().parent().parent().remove();
+	$(this).parent().parent().parent().hide();
 	
 });
+
+
 

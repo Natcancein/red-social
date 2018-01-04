@@ -248,7 +248,13 @@ h6 {
 
 /*SUBIR FOTOS*/
 .subir {
+<<<<<<< Updated upstream
   text-align: center;
+=======
+  margin:0 auto;
+  text-align: center;
+  /*margin-left: 35%;*/
+>>>>>>> Stashed changes
 
 }
 
@@ -274,12 +280,56 @@ h6 {
     height:0;
     outline: none;
     cursor: inherit;
+
 }
 
 .cam{
   margin-left: 20%;
+<<<<<<< Updated upstream
 }
 
 #img-guardar {
   text-align: center;
 }
+=======
+
+
+.container{
+    margin-top:20px;
+}
+.image-preview-input {
+    position: relative;
+  overflow: hidden;
+  margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity= 100);
+  visibility: hidden;
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+
+#fotos .tab-pane {
+  margin: 0 auto;
+}
+
+#preview{
+  margin-left: 0px;
+
+}
+
+
+
+>>>>>>> Stashed changes
