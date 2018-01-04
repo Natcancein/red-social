@@ -2,6 +2,8 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
 
+// SUBIR FOTOS
+
 $('#preview').hover(
     function() {
         $(this).find('a').fadeIn();
@@ -32,11 +34,13 @@ $('input[type=file]').change(function() {
      reader.readAsDataURL(this.files[0]);
 });
 
+// PUBLICAR FOTO
 $("#btn2").click(function publicar(){
     var imagen = $("#img-guardar");
  $("#post-img").append("<div class='posteo'>"+"<img src='assets/img/contacts/perfil.jpg' class='circle-min'>" + "<h5 class='lado-nombre'>Natalia Arancibia</h5>" + "<img class='img-responsive' src="+imagen[0].src+">" );
 });
 
+// PUBLICAR COMENTARIO
 $("#btn").click(function saveCom(){
     var comment = $("#comment").val();
     
@@ -45,6 +49,8 @@ comment + "</br>" +"</div>");
     
 });
 
+
+// ESCONDER INPUT FILE
 $("#file").hide();
 
 $("#seguir").mouseenter(function dejar(){
@@ -53,13 +59,21 @@ $("#seguir").mouseenter(function dejar(){
 
 });
 
-$("#seguir").mouseleave(function volver(){
-    $("#seguir").text("Siguiendo").css("font-size","12px");
-    
-});
+	
+	for(var i=0;i< $('.col-xs-4').length; ++i){
+		var id="#friend"+i;
+		$(id).find("a").mouseenter(function(){
+			$(this).text("Dejar de seguir").css("font-size","10px");
+		});
+		$(id).find("a").mouseleave(function(){
+			$(this).text("Siguiendo").css("font-size","12px");
+		});
+		$(id).find("a").mouseup(function(){
+			$(this).parent().parent().parent().parent().remove();
 
-$("#seguir").mouseup(function remover(){
-    $(this).parent().parent().parent().remove();
-    
-});
+		});
+		if $(id===0){
+				$("#sinAmigos").text("Quedaste sin amigos");
+			}
+	}
 
