@@ -108,6 +108,29 @@ for(var i=0;i< $('.col-xs-4').length; ++i){
   });
 
 /**
+*Añadir Comentarios a posts maqueta PerfilUsuario.html
+*/
+  $('.comments2').keyup(function(e){
+    if(e.keyCode == 13){
+      var newComment = $(this).val();      
+      $("<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 newComment'>" 
+        + "<p class='col-lg-10'>" + newComment + "</p>" 
+        + "<p class='col-lg-10 lado-nombre'>" + "Nombre Apellido" + "</p>" 
+        + "<span class='col-lg-1 glyphicon glyphicon-heart icons-newComment '>" + "</span>" 
+        + "<span class='col-lg-1 glyphicon glyphicon-trash icons-newComment '>" + "</span>" 
+        +"</div>").insertBefore(this).closest("div");
+      $(this).val("");
+     
+    }
+  });
+/**
+*ver comentarios de post
+*/
+  $(".allComments p").click(function(){
+    $(".newComment").show();
+  });
+
+/**
 *AÑADIR CONTACTO
 *Cambia contador index.html
 */
