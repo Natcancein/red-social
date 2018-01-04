@@ -1,8 +1,6 @@
 $(document).ready(function(){
-   /* $('[data-toggle="tooltip"]').tooltip(); */  
+    $('[data-toggle="tooltip"]').tooltip();   
 });
-
-
 
 $('#preview').hover(
     function() {
@@ -29,14 +27,13 @@ $('input[type=file]').change(function() {
     
      reader.onload = function (e) {
          $('#preview img').attr('src', e.target.result);
-	 }
+     }
      
-
      reader.readAsDataURL(this.files[0]);
 });
 
 $("#btn2").click(function publicar(){
-	var imagen = $("#img-guardar");
+    var imagen = $("#img-guardar");
  $("#post-img").append("<div class='posteo'>"+"<img src='assets/img/contacts/perfil.jpg' class='circle-min'>" + "<h5 class='lado-nombre'>Natalia Arancibia</h5>" + "<img class='img-responsive' src="+imagen[0].src+">" );
 });
 
@@ -51,22 +48,18 @@ comment + "</br>" +"</div>");
 $("#file").hide();
 
 $("#seguir").mouseenter(function dejar(){
-	$("#seguir").text("dejar de seguir").css("font-size","10px");
+    
+    $("#seguir").text("dejar de seguir").css("font-size","10px");
 
 });
 
-
-
-
 $("#seguir").mouseleave(function volver(){
-	$("#seguir").text("Siguiendo").css("font-size","12px");
-	
+    $("#seguir").text("Siguiendo").css("font-size","12px");
+    
 });
 
 $("#seguir").mouseup(function remover(){
-	$(this).parent().parent().parent().hide();
-	
+    $(this).parent().parent().parent().remove();
+    
 });
-
-
 
