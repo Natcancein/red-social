@@ -34,7 +34,7 @@ $('input[type=file]').change(function() {
 
 $("#btn2").click(function publicar(){
 	var imagen = $("#img-guardar");
- $("#post-img").append("<div class='posteo'>"+"<img src='assets/img/contacts/perfil.jpg' class='circle-min'>" + "<h5 class='lado-nombre'>Natalia Arancibia</h5>" + "<img src="+imagen[0].src+">" );
+ $("#post-img").append("<div class='posteo'>"+"<img src='assets/img/contacts/perfil.jpg' class='circle-min'>" + "<h5 class='lado-nombre'>Natalia Arancibia</h5>" + "<img class='img-responsive' src="+imagen[0].src+">" );
 });
 
 $("#btn").click(function saveCom(){
