@@ -288,19 +288,15 @@ h6 {
     height:0;
     outline: none;
     cursor: inherit;
-
 }
 
 .cam{
   margin-left: 20%;
-
 }
 
 #img-guardar {
   text-align: center;
 }
-
-
 
 .container{
     margin-top:20px;
@@ -338,10 +334,15 @@ h6 {
 
 }
 
+/*NUEVOS COMENTARIOS*/
 .newComment {
   border: 1px solid green;
   margin-top: 5px;
   margin-bottom: 5px;
+  border-radius: 10px;
+}
+.icons-newComment {
+  color:green;
 }
 
 /*MEDIAQUERY*/
