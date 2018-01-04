@@ -69,16 +69,16 @@ $("#file").hide();
 for(var i=0;i< $('.col-xs-4').length; ++i){
 	var id="#friend"+i;
 		$(id).find("a").mouseenter(function(){
-			$(this).text("Dejar de seguir").css("font-size","10px");
+			$(this).text("Dejar").css("font-size","10px");
 	});
 		$(id).find("a").mouseleave(function(){
-			$(this).text("Siguiendo").css("font-size","12px");
+			$(this).text("Siguiendo").css("font-size","10px");
 	});
 		$(id).find("a").mouseup(function(){
+      i--;
+        document.getElementById("unFollow").innerHTML = (i-2) + " FOLLOWING" ;
 			$(this).parent().parent().parent().parent().remove();
-			if ($('.col-xs-4').length ===0){
-			$("#sinAmigos").text("Quedaste sin amigos!");
-			}
+			
 
 		});
 	
@@ -109,8 +109,9 @@ for(var i=0;i< $('.col-xs-4').length; ++i){
 
 /**
 *AÑADIR CONTACTO
+*Cambia contador index.html
 */
-var i=162;
+var i=0;
 for(var i=0;i< $('.col-xs-4').length; ++i){
   var id="#contact"+i;
     $(id).find("a").mouseenter(function(){
@@ -121,9 +122,10 @@ for(var i=0;i< $('.col-xs-4').length; ++i){
   });
     $(id).find("a").click(function(){
      $(this).text("Siguiendo").css("background-color","blue").addClass("btn-default");
-        i++;
-        document.getElementById("numberFollowing").innerHTML = i +152;
-      //$(this).parent().parent().parent().parent().remove();
+        
+      $(this).parent().parent().parent().parent().remove();
+      i++;
+        document.getElementById("numberFollowing").innerHTML = i+2;
 
       });
 
