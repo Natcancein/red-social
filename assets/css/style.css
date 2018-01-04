@@ -246,21 +246,22 @@ h6 {
   font-weight: 600;
 }
 
+/*SUBIR FOTOS*/
 .subir {
-  margin:0 auto;
-  margin-left: 35%;
+  text-align: center;
+
 }
 
-.subir2 {
+/*.subir2 {
   margin:0 auto;
   margin-left: 10%;
-}
+}*/
 
 #camara {
   margin-left: 0%;
 }
 
-/*BOTON CAMARA*/
+/*CAMARA*/
 .btn-bs-file{
     position:relative;
 }
@@ -277,4 +278,8 @@ h6 {
 
 .cam{
   margin-left: 20%;
+}
+
+#img-guardar {
+  text-align: center;
 }
