@@ -147,9 +147,16 @@ for(var i=0;i< $('.col-xs-4').length; ++i){
      $(this).text("Siguiendo").css("background-color","blue").addClass("btn-default");
         
       $(this).parent().parent().parent().parent().remove();
+        if ($("#contacto5").remove()){
+          $("#suggestions").hide();
+        }
       i++;
         document.getElementById("numberFollowing").innerHTML = i+2;
-
+       
       });
 
+
     }
+
+      
+
