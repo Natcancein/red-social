@@ -76,7 +76,7 @@ for(var i=0;i< $('.col-xs-4').length; ++i){
 	});
 		$(id).find("a").mouseup(function(){
       i--;
-        document.getElementById("unFollow").innerHTML = (i-2) + " FOLLOWING" ;
+        document.getElementById("unFollow").innerHTML = (i-1) + " FOLLOWING" ;
 			$(this).parent().parent().parent().parent().remove();
 			
 
@@ -151,7 +151,7 @@ for(var i=0;i< $('.col-xs-4').length; ++i){
           $("#suggestions").hide();
         }
       i++;
-        document.getElementById("numberFollowing").innerHTML = i+2;
+        document.getElementById("numberFollowing").innerHTML = i+1;
        
       });
 
